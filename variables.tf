@@ -57,6 +57,9 @@ variable "VM_public_ip_name" {
 variable "VM_public_ip_rg" {
   type = string
 }
+variable "data-iq-license" {
+  type = any
+}
 
 # Snowflake
 
