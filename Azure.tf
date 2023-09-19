@@ -93,7 +93,7 @@ resource "azurerm_linux_virtual_machine" "Azure_snowflake" {
   }
 
   provisioner "file" {
-    source      = "${path.module}/license.json"
+    source      = var.data-iq-license
     destination = "/tmp/license.json"
   }
 
